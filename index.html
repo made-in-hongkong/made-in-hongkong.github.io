@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,25 +36,29 @@
             setCookie(name, "", -1);
         }
 
-        // Function to check and prompt for the username cookie
-        function checkCookie() {
-            const user = getCookie("username");
-            if (user != "") {
-                alert("Welcome back, " + user);
+        // Function to prompt for review, accept, or reject
+        function checkPolicy() {
+            const policy = getCookie("policy");
+            if (policy != "") {
+                alert("You have already " + policy + "ed the policy.");
             } else {
-                const username = prompt("Please enter your name:", "");
-                if (username != "" && username != null) {
-                    setCookie("username", username, 365);
+                const response = prompt("Please review the policy: Type 'accept' or 'reject'", "");
+                if (response == "accept" || response == "reject") {
+                    setCookie("policy", response, 365);
+                    alert("You have " + response + "ed the policy.");
+                } else {
+                    alert("Invalid response. Please reload the page and try again.");
                 }
             }
         }
     </script>
 </head>
-<body onload="checkCookie()">
+<body onload="checkPolicy()">
     <h1>Welcome to My Homepage</h1>
     <h1>Hello World! Coming Soon!</h1>
-    <button onclick="setCookie('username', 'John Doe', 365)">Set Cookie</button>
-    <button onclick="alert(getCookie('username'))">Get Cookie</button>
-    <button onclick="eraseCookie('username')">Erase Cookie</button>
+    <button onclick="setCookie('policy', 'accept', 365)">Accept Policy</button>
+    <button onclick="setCookie('policy', 'reject', 365)">Reject Policy</button>
+    <button onclick="alert(getCookie('policy'))">Check Policy Status</button>
+    <button onclick="eraseCookie('policy')">Erase Policy Cookie</button>
 </body>
 </html>
