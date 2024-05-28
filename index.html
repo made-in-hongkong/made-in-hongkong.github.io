@@ -56,10 +56,32 @@
 <body onload="checkPolicy()">
     <h1>Welcome to My Homepage</h1>
     <h1>Hello World! Coming Soon!</h1>
-    <iframe src="getIpAddress.php" width="300" height="50"></iframe>
     <button onclick="setCookie('policy', 'accept', 365)">Accept Policy</button>
     <button onclick="setCookie('policy', 'reject', 365)">Reject Policy</button>
     <button onclick="alert(getCookie('policy'))">Check Policy Status</button>
     <button onclick="eraseCookie('policy')">Erase Policy Cookie</button>
+    <h1>Your IP Address is:</h1>
+    <p id="ip-address">Fetching IP address...</p>
+
+    <script>
+        // Function to fetch and display the IP address
+        async function fetchIPAddress() {
+            try {
+                // Fetch the IP address from the ipify API
+                let response = await fetch('https://api.ipify.org?format=json');
+                let data = await response.json();
+
+                // Display the IP address on the webpage
+                document.getElementById('ip-address').textContent = data.ip;
+            } catch (error) {
+                // Handle any errors
+                document.getElementById('ip-address').textContent = 'Unable to fetch IP address';
+                console.error('Error fetching IP address:', error);
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = fetchIPAddress;
+    </script>
 </body>
 </html>
