@@ -16,13 +16,14 @@ emailjs.init({
       throttle: 10000,
     },
   });
-
+  console.log("EmailJS initialized successfully with Public Key.");
+  
 // Add an event listener to the form submission
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Send the form data using EmailJS
-    emailjs.send('service_62qai5b', 'template_tim2m1b', this)
+    emailjs.sendForm('service_62qai5b', 'template_tim2m1b', this)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully!');
