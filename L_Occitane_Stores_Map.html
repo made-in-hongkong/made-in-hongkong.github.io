@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf06bbf75455c97d7137d1207ee8cd6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf06bbf75455c97d7137d1207ee8cd6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf06bbf75455c97d7137d1207ee8cd6a = L.map(
+                "map_cf06bbf75455c97d7137d1207ee8cd6a",
+                {
+                    center: [20.0, 120.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b9fdff4890b70c2c8f7e08fca6caf9d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+            var circle_marker_d0e00a1907a24def305822383e64024e = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_367892babf84b5142dad78824f1c852b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7a87057f491f0668d6bcb1dd1058886 = $(`<div id="html_d7a87057f491f0668d6bcb1dd1058886" style="width: 100.0%; height: 100.0%;">Australia: 60 stores</div>`)[0];
+            popup_367892babf84b5142dad78824f1c852b.setContent(html_d7a87057f491f0668d6bcb1dd1058886);
+        
+
+        circle_marker_d0e00a1907a24def305822383e64024e.bindPopup(popup_367892babf84b5142dad78824f1c852b)
+        ;
+
+        
+    
+    
+            var circle_marker_e0a8b93c64731ea7244a4a9062d4b462 = L.circleMarker(
+                [-40.9006, 174.886],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_482b7a6cee79b7f517a35cd5b0f6b9e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54819e0912c0254993f9a63427da99a4 = $(`<div id="html_54819e0912c0254993f9a63427da99a4" style="width: 100.0%; height: 100.0%;">New Zealand: 8 stores</div>`)[0];
+            popup_482b7a6cee79b7f517a35cd5b0f6b9e7.setContent(html_54819e0912c0254993f9a63427da99a4);
+        
+
+        circle_marker_e0a8b93c64731ea7244a4a9062d4b462.bindPopup(popup_482b7a6cee79b7f517a35cd5b0f6b9e7)
+        ;
+
+        
+    
+    
+            var circle_marker_8e01143f18ed297484ed56536b2788d2 = L.circleMarker(
+                [22.3193, 114.1694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_1f43b5440a07ff5f7d3534c70bdb4b1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1dd756f502950bcfa71772a2e8fc956 = $(`<div id="html_e1dd756f502950bcfa71772a2e8fc956" style="width: 100.0%; height: 100.0%;">Hong Kong: 27 stores</div>`)[0];
+            popup_1f43b5440a07ff5f7d3534c70bdb4b1b.setContent(html_e1dd756f502950bcfa71772a2e8fc956);
+        
+
+        circle_marker_8e01143f18ed297484ed56536b2788d2.bindPopup(popup_1f43b5440a07ff5f7d3534c70bdb4b1b)
+        ;
+
+        
+    
+    
+            var circle_marker_0f493df610329d93f3bbd0b60690c61b = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_95284fbc80037f50390729feddaf83a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_826ad5fc37107cead9efcbce50debe79 = $(`<div id="html_826ad5fc37107cead9efcbce50debe79" style="width: 100.0%; height: 100.0%;">South Korea: 75 stores</div>`)[0];
+            popup_95284fbc80037f50390729feddaf83a1.setContent(html_826ad5fc37107cead9efcbce50debe79);
+        
+
+        circle_marker_0f493df610329d93f3bbd0b60690c61b.bindPopup(popup_95284fbc80037f50390729feddaf83a1)
+        ;
+
+        
+    
+    
+            var circle_marker_f4b364e667f548785c51bf1c57358187 = L.circleMarker(
+                [1.3521, 103.8198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_633c8368d03631a4bb272d6154201d77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14f50a62bafaeb9f211967ae6b63e46f = $(`<div id="html_14f50a62bafaeb9f211967ae6b63e46f" style="width: 100.0%; height: 100.0%;">Singapore: 15 stores</div>`)[0];
+            popup_633c8368d03631a4bb272d6154201d77.setContent(html_14f50a62bafaeb9f211967ae6b63e46f);
+        
+
+        circle_marker_f4b364e667f548785c51bf1c57358187.bindPopup(popup_633c8368d03631a4bb272d6154201d77)
+        ;
+
+        
+    
+    
+            var circle_marker_4865f3342d05daa58e0a6a531eb2b636 = L.circleMarker(
+                [22.1987, 113.5439],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_98a40e63bb57275e2a5b38de012d8e24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eff96d5b58cee3b136b1bec1c48d7562 = $(`<div id="html_eff96d5b58cee3b136b1bec1c48d7562" style="width: 100.0%; height: 100.0%;">Macau: 2 stores</div>`)[0];
+            popup_98a40e63bb57275e2a5b38de012d8e24.setContent(html_eff96d5b58cee3b136b1bec1c48d7562);
+        
+
+        circle_marker_4865f3342d05daa58e0a6a531eb2b636.bindPopup(popup_98a40e63bb57275e2a5b38de012d8e24)
+        ;
+
+        
+    
+    
+            var circle_marker_575c4d19a969945beafabeacb49f5da0 = L.circleMarker(
+                [4.2105, 101.9758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_fbce9f4899869f1f56269939ffae8188 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0dcc44e6615146da957624cc22eea88 = $(`<div id="html_c0dcc44e6615146da957624cc22eea88" style="width: 100.0%; height: 100.0%;">Malaysia: 42 stores</div>`)[0];
+            popup_fbce9f4899869f1f56269939ffae8188.setContent(html_c0dcc44e6615146da957624cc22eea88);
+        
+
+        circle_marker_575c4d19a969945beafabeacb49f5da0.bindPopup(popup_fbce9f4899869f1f56269939ffae8188)
+        ;
+
+        
+    
+    
+            var circle_marker_5faf05dab1dd1556e25fcb6ee30914ef = L.circleMarker(
+                [15.87, 100.9925],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_6b6f1684e511a176181e36866012db99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39a084b835e35be99478ca447be17006 = $(`<div id="html_39a084b835e35be99478ca447be17006" style="width: 100.0%; height: 100.0%;">Thailand: 40 stores</div>`)[0];
+            popup_6b6f1684e511a176181e36866012db99.setContent(html_39a084b835e35be99478ca447be17006);
+        
+
+        circle_marker_5faf05dab1dd1556e25fcb6ee30914ef.bindPopup(popup_6b6f1684e511a176181e36866012db99)
+        ;
+
+        
+    
+    
+            var circle_marker_9ba6a53392b833e914638fbc256f7e05 = L.circleMarker(
+                [23.6978, 120.9605],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_cf06bbf75455c97d7137d1207ee8cd6a);
+        
+    
+        var popup_5fd074df09459d218049b3c83a90c22f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4013f3c797c2eb864977c5be8a445cb = $(`<div id="html_d4013f3c797c2eb864977c5be8a445cb" style="width: 100.0%; height: 100.0%;">Taiwan: 70 stores</div>`)[0];
+            popup_5fd074df09459d218049b3c83a90c22f.setContent(html_d4013f3c797c2eb864977c5be8a445cb);
+        
+
+        circle_marker_9ba6a53392b833e914638fbc256f7e05.bindPopup(popup_5fd074df09459d218049b3c83a90c22f)
+        ;
+
+        
+    
+</script>
+</html>
